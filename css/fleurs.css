@@ -1,0 +1,129 @@
+/* DEBUT MAIN */
+
+main {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 80vh;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+    vertical-align: top;
+}
+
+h1{
+    color: var(--white);
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.text {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    gap: 120px;
+}
+
+.carouselExampleIndicators img {
+    position: relative;
+}
+
+#carouselExampleIndicators h3 {
+    position: absolute;
+    z-index: 10;
+    background: #ffffffaa;
+    border-radius: 0 0 30px 0;
+    width: 70%;
+    transition: transform 350ms;
+}
+
+#carouselExampleIndicators:hover h3{
+    transform: scale(1.2);
+}
+
+
+#carouselExampleIndicators {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    
+}
+
+.bandeau {
+    background-color: var(--header-color);
+    padding: 1px;
+}
+
+.bandeau h1 {
+    padding: 10px;
+}
+
+.carousel {
+    margin: 0;
+}
+
+.small div .carousel-inner{
+    max-height: 320px;
+    max-width: 450px;
+    height: auto;
+    width: 100%;
+}
+
+.small{
+    margin-bottom: 5%;
+}
+
+.fond{
+    background: #fff;
+    border: 2px solid #459023;
+    border-radius: 0 0 30px 30px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fond p {
+    margin: 0 auto;
+}
+
+
+/* FIN MAIN */
+
+
+/* Media queries */
+
+@media screen and (max-width: 418px) {
+    .carbody {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        width: 300px;
+        padding: 10px;
+    }
+    
+    .text {
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .fond p {
+        font-size: 15px;
+    }
+    
+}

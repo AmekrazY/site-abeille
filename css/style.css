@@ -1,0 +1,61 @@
+/* Police de caractère pour tout la page */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+
+
+/* On inclu tout les éléments de la page */
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #FFFFFF;
+    --header-color: #459023;
+    --footer-color: #008000;
+}
+
+body {
+    font-family: "Lato", sans-serif !important;
+}
+
+/* Header, texte et éléments de navigations */
+
+.navbar a img {
+    width: 50px;
+    transform: scaleX(-1);
+}
+
+.bg {
+    background-color: var(--header-color);
+}
+
+a.nav-link{
+color: var(--white) !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.active{
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer{ 
+    background-color: var(--footer-color);
+    padding: 3vw;
+}
+
+footer ul li a {
+    text-align: center;
+}
+
+.text-center {
+    color: var(--white);
+    margin: 0 auto;
+}
